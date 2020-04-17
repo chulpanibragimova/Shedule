@@ -1,0 +1,121 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: white;
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    
+}
+.block {
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+.styled-select select {
+   background: transparent;
+   width: 678px;
+   padding: 5px;
+   font-size: 16px;
+   height: 34px;
+    border:none;
+    
+}
+.styled-select{
+    width: 668px;
+   height: 34px;
+   overflow: hidden;
+    background: url(../src/new_arrow.jpg) no-repeat right;
+    background-size: 24px 24px;
+    border: 2px solid #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Линия по ширине */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn,.sendButton {
+    display: block;
+    background-color: #9b59b6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    color: white;
+    padding: 1em 2em;
+    margin: 8px 0;
+    border: 1px solid #fff;
+    outline: 0;
+    cursor: pointer;
+    width: 100%;
+      transition: 0.3s ease;
+      -webkit-appearance: none;
+}
+
+.registerbtn,.sendButton:hover {
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 50%;
+}
+.success {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+    margin-bottom: 15px 15px;
+    padding: 4px 12px;
+}
+.danger {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    margin-bottom: 15px 15px;
+    padding: 4px 12px;
+}
+

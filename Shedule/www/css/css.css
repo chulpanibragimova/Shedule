@@ -1,0 +1,235 @@
+::-webkit-scrollbar{
+    width: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px; 
+    overflow: scroll;
+}
+
+#menu{
+    position: fixed;
+    z-index: 998;
+    
+}
+
+
+#content{
+    z-index: 10;
+    font-size: 14px;
+    margin-top: 48px; 
+    padding: 0px 0px; 
+    position: absolute;
+    
+}
+#menuItems{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+
+*{box-sizing:border-box} 
+.tabs { 
+  width: 180px; 
+  padding: 0px;
+  position: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+/*  border: 0px solid #D9D6EE; */
+} 
+section { 
+  display: none;  
+    width: 500px;
+  padding: 10%;
+    max-height: 850px;
+    overflow-y: scroll;
+/*  background: ; */
+  position: absolute; 
+  top: 0; 
+  left: 180px;
+    animation: scale 0.7s ease-in-out; 
+}
+.cwdtable {
+    font-size:12px;
+    color:#333333;
+    border-width: 0px;
+    border-color: #a9a9a9;
+    border-collapse: collapse;
+    margin: 8px;
+}
+.cwdtable th {background:#d3d3d3;}
+.cwdtable tr {background:#ffffff;}
+.cwdtable td {
+    width: 200px;
+}
+.cwdtable th,.cwdtable td{
+    text-align:center;
+    font-size:12px;
+    border-width: 1px;
+    padding: 8px;
+    border-color: #a9a9a9;
+    border-style: solid;
+    word-wrap: break-word;
+}
+#thGroups{
+    word-wrap: break-word;
+}
+.cwdtable tr:hover {background:#f8f8f8;}
+.sendButton{
+    display: inline-block;
+    padding: 8px;
+    margin: 8px;
+}
+p { 
+  margin: 8px; 
+} 
+input { 
+  display: none;  
+} 
+.inputText{
+    display: inline-block;
+    padding: 8px;
+    margin: 8px;
+    width: 231px;
+}
+label { 
+  display: block; 
+  width: 180px; 
+  padding: 15px; 
+  color: #4F5966; 
+  background: #D9D6EE; 
+  cursor: pointer; 
+}
+
+input:checked + label { 
+  color: #555; 
+  background: white; 
+} 
+#tab1:checked ~ #content1, 
+#tab2:checked ~ #content2, 
+#tab3:checked ~ #content3, 
+#tab4:checked ~ #content4, 
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7 { 
+  display: block; 
+} 
+
+@keyframes scale { 
+  0% { 
+  transform: scale(0.9); 
+  opacity: 0; 
+  } 
+  50% { 
+  transform: scale(1.005); 
+  opacity: 0.5; 
+  } 
+  100% { 
+  transform: scale(1); 
+  opacity: 1; 
+  } 
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-top: 0px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+}
+
+/* Изменение цвета при наведении */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Добавление цвета на active/current ссылки */
+.topnav a.active {
+    background-color: #7C71D8;
+    color: white;
+}
+
+/*кнопка входа*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.button {
+  /* Сбрасываем дефолтные стили */
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 12px 16px;
+  border-radius: 100px;
+  color: #fff;
+}
+.button i {
+  margin-right: 4px;
+}
+.button + .button {
+  margin-left: 6px;
+}
+.button.blue {
+    margin: 0px 4px 0px 4px;
+    float:right;
+  background: #2196F3;
+}
+.button.purple {
+    margin: 0px 4px 0px 4px;
+    float:right;
+    background: #9b59b6;
+}
+
+.button:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button:hover.blue {
+  background: #39a1f4;
+    
+}
+.button:hover.purple {
+  background: #a66bbe;
+}
+.button:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button:active.blue {
+  background: #0d8aee;
+}
+.button:active.purple {
+  background: #8f4bab;
+}
+
+/*Кнопки удаления*/
+.delbutton{
+    width:25px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    line-height: 16px;
+    padding: 0px;
+}
+td.trashtd{
+    overflow: visible;
+    border: 0px solid black;
+}
+.trashtd>form{
+    text-align:center;
+}
